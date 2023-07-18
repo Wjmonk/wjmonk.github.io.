@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<style type="text/css">
+		body {
+			background-color: #A6E7E1;
+		}
+	</style>
+</head>
+
+<body>
+	<p>&nbsp;</p>
+	<h1>Survey</h1>
+	<form id="survey">
+		<form action="url" method="post">
+			<fieldset id="custinfo">
+				<legend>
+					<h2> Customer Information </h2>
+				</legend>
+				<div class="formRow">
+					<label for="name"><strong>Name*</strong></label>
+					<input name="custName" id="name" type="text" placeholder="first and last name" />
+				</div>
+
+				<div class="formRow">
+					<label for="city"><strong>City</strong></label>
+					<input name="custCity" id="city" type="text" />
+				</div>
+
+				<div class="formRow">
+					<label for="state"><strong>State</strong></label>
+					<input name="custState" id="state" type="text" />
+				</div>
+
+				<div class="formRow">
+					<label for="mail"><strong>E-mail*</strong></label>
+					<input name="custEmail" id="mail" type="email" />
+				</div>
+
+			</fieldset>
+			<fieldset id="rate">
+				<legend>
+					<h2> Rate the Site </h2>
+				</legend>
+				<div class="formRow">
+					<label for="rangeBox">Rate the overall service<br />
+						Poor</label>
+					0
+					<input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="10" />
+					10
+					<label for="rangeBox">Great</label>
+				</div>
+			</fieldset>
+
+			<fieldset id="expInfo">
+				<legend>
+					<h2>What could the site do better?</h2>
+				</legend>
+
+				<div>
+					<textarea name="custExp" id="commBox"></textarea>
+				</div>
+
+			</fieldset>
+
+			<div id="FormRow">
+				<input type="submit" value="Submit My Survey" />
+				<input type="reset" value="Cancel" />
+			</div>
+			<nav>
+				<h2><a href="index.html">Home Page</a></h2>
+			</nav>
+
+		</form>
+	</form>
+</body>
+
+</html>
